@@ -1,5 +1,5 @@
 {
-  "name": "gitbook-plugin-medium-zoom",
+  "name": "gitbook-plugin-medium-zoom-conf",
   "version": "1.1.0",
   "description": "A gitbook plugin for zooming images like Medium ",
   "main": "index.js",

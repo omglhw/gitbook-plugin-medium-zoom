@@ -1,20 +1,32 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: lihw02
+ * @Date: 2021-01-19 11:55:04
+ * @LastEditors: lihw02
+ * @LastEditTime: 2021-01-19 14:30:25
+ */
 require([
   'gitbook'
 ], function(gitbook) {
-  const options = {
+  var options = {
     margin: 0,
     background: '#fff',
     scrollOffset: 40
   };
+  var selector = 'img';
 
-  const init = function() {
-    mediumZoom("img", options);
+  var init = function() {
+    mediumZoom(selector, options);
   }
 
   gitbook.events.bind('start', function(e, config){ 
-    const configOption = config['medium-zoom'];
+    var configOption = config['medium-zoom-conf'];
     if (configOption) {
-      for (const item in options) {
+      if(configOption.selector) {
+        selector = configOption.selector;
+      }
+      for (var item in options) {
         if (options.hasOwnProperty(item) && (item in configOption)) {
           options[item] = configOption[item];
         }

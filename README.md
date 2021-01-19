@@ -1,4 +1,4 @@
-# gitbook-plugin-medium-zoom
+"# gitbook-plugin-medium-zoom
 A gitbook plugin for zooming images like Medium
 
 ## Install
@@ -26,6 +26,7 @@ In you gitbook's book.json file, add `medium-zoom` to plugins list.
   ],
   "pluginsConfig": {
     "medium-zoom": {
+      "selector": ".markdown-section img",
       "margin": 24,
       "background": "#BADA55",
       "scrollOffset": 0
