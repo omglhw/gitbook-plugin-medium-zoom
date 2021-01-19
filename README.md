@@ -12,7 +12,7 @@ In you gitbook's book.json file, add `medium-zoom` to plugins list.
 ```json
 {
   "plugins": [
-    "medium-zoom"
+    "medium-zoom-conf"
   ]
 }
 ```
@@ -22,7 +22,7 @@ In you gitbook's book.json file, add `medium-zoom` to plugins list.
 ```json
 {
   "plugins": [
-    "medium-zoom"
+    "medium-zoom-conf"
   ],
   "pluginsConfig": {
     "medium-zoom": {
